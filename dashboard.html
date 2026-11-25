@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hack Computer Lab | Tushant</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;600;700;800&display=swap');
+:root{--ink:#101313;--paper:#f4f1eb;--white:#fffdfa;--line:#c9c7c0;--orange:#e9552c;--blue:#81cbe5;--lime:#c8e07a;--muted:#62645f}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 10% 5%,#88cee7,transparent 27rem),radial-gradient(circle at 90% 22%,#e55d32,transparent 30rem),#d2b8a1;color:var(--ink);font-family:Manrope,Arial,sans-serif}.shell{width:min(1180px,calc(100% - 32px));margin:20px auto;background:var(--paper);box-shadow:0 25px 85px #492b224d}header{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;border-bottom:1px solid var(--line);font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase}.brand{display:flex;align-items:center;gap:9px}.logo{background:var(--ink);color:#fff;width:24px;height:24px;display:grid;place-items:center;border-radius:50% 50% 4px 4px;font:12px "DM Mono"}nav{display:flex;gap:16px}nav a{color:inherit;text-decoration:none}.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;padding:58px 54px 28px}.eyebrow,.tag{font:11px "DM Mono";color:var(--muted);letter-spacing:.1em;text-transform:uppercase}h1{font-size:clamp(45px,6vw,78px);line-height:.9;letter-spacing:-.08em;margin:14px 0 18px}.intro{max-width:600px;font-size:16px;line-height:1.65;color:#41443f}.details{display:grid;grid-template-columns:1fr 1fr;align-self:end;border:1px solid var(--line);background:#fff9}.details div{padding:17px;border-right:1px solid var(--line)}.details div:nth-child(even){border-right:0}.details div:nth-child(n+3){border-top:1px solid var(--line)}.details span{display:block;color:var(--muted);font:10px "DM Mono";text-transform:uppercase;margin-bottom:7px}.tabs{padding:0 54px 26px;display:flex;flex-wrap:wrap;gap:8px}.tab,.run,.key{font:700 12px Manrope;cursor:pointer}.tab{padding:10px 14px;border:1px solid var(--ink);border-radius:99px;background:transparent}.tab.active,.tab:hover{background:var(--ink);color:#fff}main{padding:0 26px 42px}.panel{display:none;padding:27px;background:var(--white);border:1px solid var(--line)}.panel.active{display:block}.heading{display:flex;justify-content:space-between;align-items:end;gap:20px;padding-bottom:19px;margin-bottom:20px;border-bottom:1px solid var(--line)}h2{font-size:32px;letter-spacing:-.06em;margin:7px 0 0}.heading p{max-width:460px;margin:0;font-size:13px;line-height:1.55;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{min-height:175px;padding:20px;background:var(--paper);border:1px solid var(--line)}.num{font:11px "DM Mono";color:var(--orange)}h3{font-size:19px;letter-spacing:-.04em;margin:31px 0 8px}.card p,.controls p{font-size:13px;line-height:1.55;color:var(--muted);margin:0}.architecture{margin-top:17px;display:grid;grid-template-columns:1fr 35px 1fr 35px 1fr;align-items:center;gap:8px;padding:20px;background:#111514;color:#fff;text-align:center;font:12px "DM Mono"}.architecture div{border:1px solid #58625d;padding:20px}.architecture b{color:var(--lime);font-size:19px}.links{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}.links a{background:#e5eadf;padding:8px 10px;color:var(--ink);text-decoration:none;font:11px "DM Mono"}.links a:hover{background:var(--lime)}.lab,.editor-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px}.screen{padding:18px;background:#111514;color:#dce5dd}.screen-head,.screen-meta{display:flex;justify-content:space-between;font:10px "DM Mono"}.monitor{aspect-ratio:2/1;margin:13px 0;background:#07100c;border:8px solid #2d3732;display:grid;grid-template-columns:repeat(64,1fr);grid-template-rows:repeat(32,1fr);overflow:hidden}.px.on{background:var(--lime);box-shadow:0 0 4px #c8e07a}.led{display:inline-block;width:9px;height:9px;background:#59605a;border-radius:50%;margin-right:7px}.led.on{background:var(--lime);box-shadow:0 0 12px var(--lime)}.controls{border:1px solid var(--line);padding:20px;background:var(--paper)}.controls h3{margin:0 0 8px}.key{width:100%;margin-top:17px;padding:17px;text-align:left;border:1px solid var(--ink);background:var(--white)}.key[aria-pressed=true],.key:hover{color:white;background:var(--orange)}.key small{display:block;margin-top:5px;font:10px "DM Mono"}.calc{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:16px;background:var(--line)}.calc div{background:var(--white);padding:12px}.calc span{display:block;font:10px "DM Mono";color:var(--muted)}.calc b{font-size:15px}.editor-wrap{background:#111514;border:1px solid var(--line)}.bar{padding:10px 13px;color:#dbe4dc;border-bottom:1px solid #3b4640;font:10px "DM Mono";display:flex;justify-content:space-between}textarea{width:100%;height:330px;padding:15px;background:#111514;color:#dfe8e0;border:0;resize:vertical;font:12px/1.55 "DM Mono";outline:0}.run{margin-top:11px;border:0;background:var(--orange);color:#fff;padding:13px 18px}.output{min-height:330px;padding:17px;background:var(--paper);border:1px solid var(--line);white-space:pre-wrap;overflow:auto;font:12px/1.55 "DM Mono"}.output.ok{border-color:#679d52}.output.error{border-color:#c34b36;color:#912d1e}footer{padding:21px 54px;background:#111514;color:#edf2ed;display:flex;justify-content:space-between;gap:16px;font:11px "DM Mono"}@media(max-width:760px){.shell{width:100%;margin:0}.hero{padding:38px 25px 22px;grid-template-columns:1fr}.tabs{padding:0 25px 20px}main{padding:0 12px 24px}.panel{padding:18px}.heading,.lab,.editor-grid{display:grid;grid-template-columns:1fr}.cards{grid-template-columns:1fr}.architecture{grid-template-columns:1fr}.architecture>b{transform:rotate(90deg)}nav{display:none}footer{display:block;padding:20px 25px;line-height:1.8}}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body><div class="shell">
+<header><div class="brand"><span class="logo">H</span>Hack Computer Lab</div><nav><a href="#a">Part A</a><a href="#b">Part B</a><a href="#c">Part C</a></nav><span>ETCNTC301 · Capstone</span></header>
+<section class="hero"><div><span class="eyebrow">Individual work / K.R. Mangalam University</span><h1>Make the computer draw a box.</h1><p class="intro">An interactive showcase of Tushant’s Hack computer, Python assembler and keyboard-controlled screen graphics program.</p></div><div class="details"><div><span>Student</span><b>Tushant</b></div><div><span>Roll no.</span><b>2501730294</b></div><div><span>Personal K</span><b>94</b></div><div><span>School</span><b>Engineering & Technology</b></div></div></section>
+<div class="tabs" role="tablist"><button class="tab active" data-panel="a" aria-selected="true">Part A · Hack Computer</button><button class="tab" data-panel="b" aria-selected="false">Part B · Assembler</button><button class="tab" data-panel="c" aria-selected="false">Part C · Box Projection</button></div>
+<main>
+<section class="panel active" id="a"><div class="heading"><div><span class="tag">Part A / HDL implementation</span><h2>The computer pipeline</h2></div><p>CPU, Memory and Computer HDL files connect into a working Hack computer.</p></div><div class="cards"><article class="card"><span class="num">01 / CPU.hdl</span><h3>Instruction execution</h3><p>Decodes A- and C-instructions, drives the ALU, memory writes and Program Counter.</p></article><article class="card"><span class="num">02 / Memory.hdl</span><h3>Mapped memory</h3><p>Routes RAM, screen and keyboard ranges through the Hack memory map.</p></article><article class="card"><span class="num">03 / Computer.hdl</span><h3>System integration</h3><p>Links CPU, Memory and ROM32K so the compiled box program can run.</p></article></div><div class="architecture"><div>ROM32K<br><b>Program</b></div><b>→</b><div>CPU<br><b>ALU + PC</b></div><b>↔</b><div>Memory<br><b>RAM / Screen / KBD</b></div></div><div class="links"><a href="CPU.hdl">Open CPU.hdl</a><a href="Memory.hdl">Open Memory.hdl</a><a href="Computer.hdl">Open Computer.hdl</a><a href="screenshots/CPU.png">CPU test proof</a></div></section>
+<section class="panel" id="b"><div class="heading"><div><span class="tag">Part B / Python assembler</span><h2>Assemble Hack code</h2></div><p>Edit the sample below and run the in-browser two-pass demonstration. <code>assembler.py</code> remains the repository’s source implementation.</p></div><div class="editor-grid"><div><div class="editor-wrap"><div class="bar"><span>Box.asm · editable demo</span><span>two pass</span></div><textarea id="source" aria-label="Hack Assembly source">// K = 94 | width = 48 pixels
+(LOOP)
+@KBD
+D=M
+@PRESSED
+D;JNE
+@color
+M=0
+@DRAW
+0;JMP
+(PRESSED)
+@color
+M=-1
+(DRAW)
+@19392
+D=A
+@addr
+M=D
+@20
+D=A
+@rows
+M=D
+(ROW)
+@3
+D=A
+@cols
+M=D
+(COL)
+@color
+D=M
+@addr
+A=M
+M=D
+@addr
+M=M+1
+@cols
+M=M-1
+D=M
+@COL
+D;JGT
+@29
+D=A
+@addr
+M=D+M
+@rows
+M=M-1
+D=M
+@ROW
+D;JGT
+@LOOP
+0;JMP</textarea></div><button class="run" id="assemble">Assemble source →</button></div><div><div class="output" id="output" aria-live="polite">Ready. Assemble the editable Hack source.
+
+K mod 3 = 1:
+Invalid instructions return a clear source line number.</div><div class="links"><a href="assembler.py">Open assembler.py</a><a href="Box.hack" download>Download Box.hack</a><a href="tests/Add.asm">Add.asm</a><a href="tests/Max.asm">Max.asm</a></div></div></div></section>
+<section class="panel" id="c"><div class="heading"><div><span class="tag">Part C / live projection</span><h2>Keyboard-controlled box</h2></div><p>Press the button or hold any keyboard key. This projection uses the same K=94 calculations as <code>Box.asm</code>.</p></div><div class="lab"><div class="screen"><div class="screen-head"><span><i class="led" id="led"></i>Hack screen / 512 × 256</span><span id="state">WAITING FOR KEY</span></div><div class="monitor" id="monitor" role="img" aria-label="Hack screen; press a key to display a box"></div><div class="screen-meta"><span>ROW 94 → 113</span><span>48 × 20 PX</span><span>SCREEN + 32 × 94</span></div></div><aside class="controls"><h3>Run Box.asm</h3><p>When the keyboard register is non-zero, the program writes <code>-1</code> across three screen words for 20 rows. Releasing the key writes <code>0</code> to erase it.</p><button class="key" id="key" aria-pressed="false">Hold / release key<small>Shortcut: any physical key</small></button><div class="calc"><div><span>K</span><b>94</b></div><div><span>K mod 4</span><b>2</b></div><div><span>Words / row</span><b>3</b></div><div><span>Start address</span><b>19392</b></div></div><div class="links"><a href="Box.asm">Open Box.asm</a><a href="Box.hack" download>Download compiled file</a></div></aside></div></section>
+</main><footer><span>HACK COMPUTER LAB · TUSHANT · 2501730294</span><span>School of Engineering & Technology · K.R. Mangalam University</span></footer></div>
+<script>
+const tabs=[...document.querySelectorAll('.tab')],panels=[...document.querySelectorAll('.panel')];tabs.forEach(t=>t.onclick=()=>{tabs.forEach(x=>{x.classList.toggle('active',x===t);x.setAttribute('aria-selected',x===t)});panels.forEach(p=>p.classList.toggle('active',p.id===t.dataset.panel))});
+const monitor=document.querySelector('#monitor'),px=[];for(let i=0;i<2048;i++){let x=document.createElement('i');x.className='px';monitor.append(x);px.push(x)}let on=false;const key=document.querySelector('#key'),led=document.querySelector('#led'),state=document.querySelector('#state');function draw(v){on=v;key.setAttribute('aria-pressed',v);led.classList.toggle('on',v);state.textContent=v?'KEY DETECTED · BOX DRAWN':'WAITING FOR KEY';px.forEach((x,i)=>{let row=Math.floor(i/64),col=i%64;x.classList.toggle('on',v&&row>=12&&row<15&&col<6)})}key.onclick=()=>draw(!on);addEventListener('keydown',e=>{if(!e.repeat&&!['Tab','Shift','Control','Alt','Meta'].includes(e.key))draw(true)});addEventListener('keyup',()=>draw(false));
+const comp={'0':'0101010','1':'0111111','-1':'0111010','D':'0001100','A':'0110000','M':'1110000','D+A':'0000010','D+M':'1000010','D-A':'0010011','D-M':'1010011','A-D':'0000111','M-D':'1000111','D&A':'0000000','D&M':'1000000','D|A':'0010101','D|M':'1010101','!D':'0001101','!A':'0110001','!M':'1110001','-D':'0001111','-A':'0110011','-M':'1110011','D+1':'0011111','A+1':'0110111','M+1':'1110111','D-1':'0001110','A-1':'0110011','M-1':'1110010'},dest={'':'000','M':'001','D':'010','MD':'011','A':'100','AM':'101','AD':'110','AMD':'111'},jump={'':'000','JGT':'001','JEQ':'010','JGE':'011','JLT':'100','JNE':'101','JLE':'110','JMP':'111'};
+function clean(x){return x.split('//')[0].replace(/\s/g,'')}function asm(text){let s={SP:0,LCL:1,ARG:2,THIS:3,THAT:4,SCREEN:16384,KBD:24576},c=[],pc=0,n=16;text.split(/\r?\n/).forEach((raw,i)=>{let x=clean(raw);if(!x)return;if(x[0]=='('){if(!/^\([A-Za-z_.$:][\w.$:]*\)$/.test(x))throw Error('Line '+(i+1)+': invalid label');s[x.slice(1,-1)]=pc}else{c.push([i+1,x]);pc++}});return c.map(([line,x])=>{if(x[0]=='@'){let a=x.slice(1);if(/^\d+$/.test(a)){if(+a>32767)throw Error('Line '+line+': address out of range')}else if(!(a in s))s[a]=n++;return (/^\d+$/.test(a)?+a:s[a]).toString(2).padStart(16,'0')}let [b,j='']=x.split(';'),d='';if(b.includes('='))[d,b]=b.split('=');d=[...d].sort((a,b)=>'AMD'.indexOf(a)-'AMD'.indexOf(b)).join('');if(!(b in comp)||!(d in dest)||!(j in jump))throw Error('Line '+line+': invalid instruction '+x);return '111'+comp[b]+dest[d]+jump[j]})}
+document.querySelector('#assemble').onclick=()=>{let o=document.querySelector('#output');try{let r=asm(document.querySelector('#source').value);o.className='output ok';o.textContent='ASSEMBLED SUCCESSFULLY\n'+r.length+' instructions generated\n\n'+r.slice(0,14).join('\n')+(r.length>14?'\n…':'')}catch(e){o.className='output error';o.textContent='ASSEMBLER ERROR\n'+e.message+'\n\nK mod 3 = 1: the error includes its line number.'}};
+</script></body></html>

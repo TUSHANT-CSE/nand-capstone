@@ -1,4 +1,4 @@
-// Duplicate label demo (K mod 3 = 2 feature)
+// Duplicate label warning demonstration.
 (LOOP)
 @1
 D=A

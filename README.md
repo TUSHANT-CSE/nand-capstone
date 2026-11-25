@@ -1,13 +1,13 @@
 # Capstone: Make the Computer Draw a Box
 Nand to Tetris – I (ETCNTC301), K.R. Mangalam University
-**Ayush · Roll No. 2501730195 · K = 95**
+**Tushant Yadav · Roll No. 2501730294 · K = 94**
 
 | Item | Value |
 |---|---|
-| K mod 3 = 2 | extra assembler feature: warning when a label is written twice |
-| K mod 4 = 3 | box width = 16 × 4 = 64 pixels (4 words) |
-| Box | starts at row 95, 20 rows tall, rows 95–114, columns 0–63 |
-| Address | SCREEN + 32×95 = 19424 |
+| K mod 3 = 1 | duplicate labels produce an assembler warning |
+| K mod 4 = 2 | box width = 16 × 3 = 48 pixels (3 words) |
+| Box | starts at row 94, 20 rows tall, rows 94–113, columns 0–47 |
+| Address | SCREEN + 32×94 = 19392 |
 
 ## Files
 - `CPU.hdl`, `Memory.hdl`, `Computer.hdl` – Part A
@@ -21,3 +21,7 @@ python assembler.py Box.asm            # writes Box.hack
 python assembler.py Prog.asm Out.hack  # custom output name
 ```
 Load `Box.hack` in the CPU Emulator (animate: no animation), hold any key: a black box appears; release it: it disappears.
+
+## Interactive Dashboard
+Run `python -m http.server 8000` from this folder, then open `http://localhost:8000/dashboard.html`.
+The dashboard presents Parts A, B and C, includes an editable assembler demo, and visualizes the K = 94 box projection.

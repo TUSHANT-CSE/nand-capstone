@@ -1,5 +1,5 @@
 // CPU.hdl - Hack CPU (Nand to Tetris, Project 5)
-// Capstone: Ayush, Roll 2501730195, K = 95
+// Capstone: Tushant Yadav, Roll 2501730294, K = 94
 CHIP CPU {
     IN  inM[16], instruction[16], reset;
     OUT outM[16], writeM, addressM[15], pc[15];

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Hack assembler (Nand to Tetris, Project 6) - two-pass.
-Capstone: Ayush | Roll 2501730195 | K = 95 | K mod 3 = 2
-Extra feature (K mod 3 == 2): print a warning if the same label is defined twice.
+Capstone: Tushant Yadav | Roll 2501730294 | K = 94 | K mod 3 = 1
+Extra feature: print a warning if the same label is defined twice.
 
 Usage:  python assembler.py Prog.asm [Prog.hack]
 """
@@ -52,7 +52,7 @@ def first_pass(lines, symbols, warnings):
             if not s.endswith(")") or len(s) < 3:
                 raise AsmError("Line %d: invalid label '%s'" % (no, s))
             name = s[1:-1]
-            if name in labels:     # --- extra feature for K mod 3 == 2 ---
+            if name in labels:     # --- duplicate-label warning ---
                 warnings.append(
                     "Warning: Line %d: label '%s' is already defined at line %d "
                     "(keeping first definition)" % (no, name, labels[name]))
